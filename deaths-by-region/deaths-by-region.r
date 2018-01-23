@@ -30,7 +30,7 @@ plot <- malaria_deaths %>%
     y = "Zgony",
     caption = "Oparto o ourworldindata.org/malaria CC BY-SA"
   ) +
-  theme_minimal() + scale_fill_brewer(palette = "Blues", direction = 1) +
+  theme_minimal() + scale_fill_brewer(palette = "Accent", direction = 1) +
   theme(
     plot.title = element_text(family = "Verdana", size = 14),
     legend.position = "none",
