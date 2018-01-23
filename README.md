@@ -12,3 +12,7 @@ Version: 1.1.414
 ```
 
 The script is set up to work sourced in Rstudio, & produce the plot on the screen.
+
+# dependencies
+
+Besides imported packages, `magrittr` is required for the script to work correctly.
