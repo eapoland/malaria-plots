@@ -31,6 +31,18 @@ map.world <- map_data('world')
 map.malaria <- left_join( map.world, malaria_deaths, by = c('region' = 'country'))
 
 plot <- ggplot(map.malaria, aes( x = long, y = lat, group = group )) +
-    geom_polygon(aes(fill = deaths))
+    geom_polygon(aes(fill = deaths)) +
+    scale_fill_gradient(low = "#0B91AA", high = "black", na.value = "#0B91AA") +
+    labs(
+      title = "Śmierć z powodu malarii na 100 tysiąc mieszkańców",
+      caption = "Oparto o ourworldindata.org/malaria CC BY-SA",
+      x = "",
+      y = "",
+      fill = "zgony"
+    ) +
+    theme_minimal() +
+    theme(
+      plot.title = element_text(family = "Open Sans", size = 14)
+    )
 
 print(plot)

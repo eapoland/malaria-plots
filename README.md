@@ -16,3 +16,8 @@ The script is set up to work sourced in Rstudio, & produce the plot on the scree
 # dependencies
 
 Besides imported packages, `magrittr` is required for the script to work correctly.
+
+## fonts
+
+For installing additional fonts, please follow:
+https://cran.r-project.org/web/packages/extrafont/README.html
